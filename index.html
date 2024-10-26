@@ -4,24 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conatiner-words {
+    margin-top: 50px;
+    display: flex;
+    width: 76%;
+    justify-content: space-between;
+    min-height: 400px;
+}
+
+.vowels {
+    width: 100%;
+    border: solid;
+    margin-right: 30px;
+}
+
+div#constant-div {
+    width: 100%;
+    border: solid;
+}
+
+h1 {
+    text-align: center;
+}
+input#inp {
+    height: 29px;
+    width: 70%;
+    border-radius: 0px;
+    border: solid 1px;
+}
+
+button {
+    background: black;
+    color: white;
+    padding: 5px 39px;
+    border-radius: 0px;
+}
+
+.search {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+    </style>
 </head>
 <body>
-    <input type="Enter value" name="inp" id="inp" />
-    <button onClick="toAdd()">Add</button>
+    <div class="container">
+        <h1>Check Vowel and Consonants</h1>
+    <div class="search">
+        <input type="Enter value" name="inp" id="inp" />
+        <button onClick="toAdd()">Check</button>
+
+    </div>   
     
-    <div class="conatiner">
-        <h1>Vovels</h1>
-        <div id="vovel">
-            
-            fdsafsd
-          
+    <div class="conatiner-words">
+       <div class="vowels">
+
+           <h1>Vovels</h1>
+            <div id="vovel">
+
+            </div>
         </div>
-        <h1>Constant</h1>
-        <div id="constant">
-            fdsafsdafsda
-            <span>fdsa</span>
+        <div id="constant-div">
+            <h1>Consonants</h1>
+            <div id="constant">
+
+            </div>
+                
         </div>
-    </div>
+</div>
     <script src="app.js "></script>
 </body>
 </html>
